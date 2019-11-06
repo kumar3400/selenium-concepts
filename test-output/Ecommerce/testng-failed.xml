@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ecommerce]">
+  <test name="SanityTests">
+    <classes>
+      <class name="testngFramework.NewTest"/>
+      <class name="testngFramework.NewTest1"/>
+    </classes>
+  </test> <!-- SanityTests -->
+</suite> <!-- Failed suite [Ecommerce] -->

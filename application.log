@@ -1,0 +1,8 @@
+2019-10-27 16:35:43,881  INFO [main] generateLogs:35 - launching chrome browser
+2019-10-27 16:35:54,626  INFO [main] generateLogs:39 - launching gmail url
+2019-10-27 16:35:54,672  INFO [main] generateLogs:48 - Gmail
+2019-10-27 16:35:59,082  INFO [main] generateLogs:64 - close the driver
+2019-10-27 16:36:04,791  INFO [main] generateLogs:35 - launching chrome browser
+2019-10-27 16:36:12,296  INFO [main] generateLogs:39 - launching gmail url
+2019-10-27 16:36:12,504  INFO [main] generateLogs:57 - true
+2019-10-27 16:36:16,841  INFO [main] generateLogs:64 - close the driver

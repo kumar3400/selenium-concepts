@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Ecommerce" parallel="false">
+  <test name="SanityTests">
+    <classes>
+      <class name="testngFramework.NewTest"/>
+       <class name="testngFramework.NewTest1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
