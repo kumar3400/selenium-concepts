@@ -145,8 +145,8 @@ public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		
-System.setProperty("webdriver.chrome.driver", "C:\\Users\\saikumar\\Desktop\\selenium\\saik\\chromedriver_win32(2)\\chromedriver.exe");
-		
+//System.setProperty("webdriver.chrome.driver", "C:\\Users\\saikumar\\Desktop\\selenium\\saik\\chromedriver_win32(2)\\chromedriver.exe");
+ 		
       driver = new ChromeDriver();
     GcrLoginPage obj = new GcrLoginPage();
     obj.registrationpage();

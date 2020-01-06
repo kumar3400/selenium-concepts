@@ -12,8 +12,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+ 
 import com.google.common.collect.Table.Cell;
 
 public class DataDriven1 {
@@ -68,11 +70,77 @@ public class DataDriven1 {
 		 
 			// To click on logout button
 			driver.findElement(By.xpath("//a[contains(text(),'Logoff')]")).click();
-	   
+			
+			
 	  }
-	 
+	  }
+			
+			/*
+			 * 
+			 * import excel 
+			 * 
+			 * 
+			 * 
+			 * public class ExcelUtil {
+
+	// get / read the data from Excel file
+	public static String TEST_DATA_SHEET_PATH = "/Users/NaveenKhunteta/Documents/workspace/SeptBatchPOMSeries/"
+			+ "src/main/java/com/qa/hubspot/testdata/HubSpotTestData.xlsx";
+
+	public static Workbook book;
+	public static Sheet sheet;
+
+	public static Object[][] getTestData(String sheetName) {
+		try {
+			FileInputStream file = new FileInputStream(TEST_DATA_SHEET_PATH);
+			book = WorkbookFactory.create(file);
+			sheet = book.getSheet(sheetName);
+
+			Object data[][] = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+
+			for (int i = 0; i < sheet.getLastRowNum(); i++) {
+				for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
+					data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+				}
+			}
+			return data;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (InvalidFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+}
+			 * 
+			 * 
+	@DataProvider
+	public Object[][] getCRMTestData(){
+		Object data[][] = TestUtil.getTestData(sheetName);
+		return data;
+	}
+	
+	
+	@Test(priority=4, dataProvider="getCRMTestData")
+	public void validateCreateNewContact(String title, String firstName, String lastName, String company){
+		homePage.clickOnNewContactLink();
+		//contactsPage.createNewContact("Mr.", "Tom", "Peter", "Google");
+		contactsPage.createNewContact(title, firstName, lastName, company);
 		
 	}
+			 * 
+			 * 
+			 * 
+			 * 
+			 */
+	   
+
+	 
+		
+	
 	
 
 }
