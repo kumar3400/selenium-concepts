@@ -36,5 +36,6 @@
 	<classpathentry kind="lib" path="C:/Users/saikumar/Desktop/selenium/poi-3.10-FINAL/poi-ooxml-3.10-FINAL-20140208.jar"/>
 	<classpathentry kind="lib" path="C:/Users/saikumar/Desktop/selenium/poi-3.10-FINAL/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
 	<classpathentry kind="lib" path="C:/Users/saikumar/Desktop/selenium/poi-3.10-FINAL/poi-scratchpad-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikumar/Desktop/selenium/selenium webdriver jar files/sikulixapi-2.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
