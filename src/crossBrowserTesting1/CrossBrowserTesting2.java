@@ -50,7 +50,11 @@ public class CrossBrowserTesting2 {
 				driver.close();
 		
 		
-		
+
+				//System.setProperty("webdriver.gecko.driver", "C:\\Users\\saikumar\\Desktop\\selenium\\saik\\geckodriver.exe");
+				
+				//WebDriver driver = new FirefoxDriver();
+				
 	
 
 	//System.setProperty("webdriver.gecko.driver", "C:\\Users\\saikumar\\Desktop\\selenium\\saik\\geckodriver.exe");
