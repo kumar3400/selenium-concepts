@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <test name="Test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testngFramework.NewTest3">
+      <class name="Sample">
         <methods>
-          <include name="Test1"/>
-          <include name="Test2"/>
+          <include name="browser"/>
+          <include name="login"/>
+          <include name="closebrowser"/>
         </methods>
-      </class> <!-- testngFramework.NewTest3 -->
+      </class> <!-- Sample -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
