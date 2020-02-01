@@ -15,7 +15,7 @@ public class DatePicker {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\saikumar\\Desktop\\selenium\\saik\\chromedriver_win32(3)\\chromedriver.exe");	
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		//dynamic wait
+		///dynamic wait
 		//driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
